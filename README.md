@@ -15,5 +15,5 @@ python3 tests/test_app.py
 ```
 
 ## Swagger_ui:
-local: http://127.0.0.1:5000/swagger/
+local: http://127.0.0.1:5000/swagger/\
 heroku: https://nypl-assessment-search-api.herokuapp.com/swagger/
