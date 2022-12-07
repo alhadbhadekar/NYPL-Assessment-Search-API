@@ -1,0 +1,117 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "description": "NYPL Assessment",
+      "version": "1.0.0",
+      "title": "NYPL Assessment",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "tags": [
+        {
+          "name": "Search API",
+          "description": "NYPL Assessment Search API"
+        }
+      ],
+      "servers": [
+        {
+        "url": "/"
+        }
+    ],
+    "components": {
+        "schemas": {
+            "SearchList": {
+                "type": "object",
+                "properties": {
+                    "ItemDetailURL": {
+                        "type": "string"
+                    },
+                    "ItemURL": {
+                        "type": "string"
+                    },
+                    "Digitized Date": {
+                        "type": "string"
+                    },
+                    "ImageId": {
+                        "type": "string"
+                    },
+                    "Link": {
+                        "type": "string"
+                    },
+                    "Title": {
+                        "type": "string"
+                    },
+                    "TypeOfResource": {
+                        "type": "string"
+                    }
+                }
+            },
+            "Text":{
+                "type" : "string",
+                "properties" : {
+                    "name" : {
+                        "type" : "string"
+                    }
+                }
+            },
+            "Error":{
+                "type" : "object",
+                "properties" : {
+                    "error" : {
+                        "type" : "string"
+                    }
+                }
+            }
+        }
+    },
+    "paths": {
+        "/api/v1/search/{text}":{
+
+            "get" :{
+                "tags": [
+                    "Get search results from API"
+                ],
+                "summary": "Get search results from NYPL API",
+                "parameters": [{
+                  "name": "text",
+                  "in": "path",
+                  "description": "search results for a text input from NYPL API",
+                  "required": true,
+                  "type": "integer",
+                  "schema" : {
+                      "$ref": "#/components/schemas/Text"
+                  }
+                }],
+               
+                "responses": {
+                "200": {
+                    "description": "OK",
+                    "schema": {
+                    "$ref": "#/components/schemas/SearchList"
+                    }
+                },
+                "400": {
+                    "description": "BAD REQUEST",
+                    "schema": {
+                    "$ref": "#/components/schemas/Error"
+                    }
+                },
+                "404": {
+                    "description": "NOT FOUND",
+                    "schema": {
+                    "$ref": "#/components/schemas/Error"
+                    }
+                },
+                "500": {
+                    "description": "INTERNAL SERVER ERROR",
+                    "schema": {
+                    "$ref": "#/components/schemas/Error"
+                    }
+                }
+            }
+            }
+        }
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "nyplAPI": {
+        "request": {
+            "search_text": "hello",
+            "filter_type": "fuzzy",
+            "perPage": "10",
+            "page": "1",
+            "totalPages": "10",
+            "startTime": "Beginning of Time",
+            "endTime": "Till Now"
+        },
+        "response": {
+            "headers": {
+                "status": "success",
+                "code": "200",
+                "message": "ok"
+            },
+            "numResults": "0"
+        }
+    }
+}

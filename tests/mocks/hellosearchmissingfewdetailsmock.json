@@ -1,0 +1,34 @@
+{
+    "nyplAPI": {
+        "request": {
+            "search_text": "hello",
+            "filter_type": "fuzzy",
+            "perPage": "10",
+            "page": "1",
+            "totalPages": "10",
+            "startTime": "Beginning of Time",
+            "endTime": "Till Now"
+        },
+        "response": {
+            "headers": {
+                "status": "success",
+                "code": "200",
+                "message": "ok"
+            },
+            "numResults": "92",
+            "result": [
+                {
+                    "uuid": "510d47da-5165-a3d9-e040-e00a18064a99",
+                    "apiUri": "http://api.repo.nypl.org/api/v2/items/mods/510d47da-5165-a3d9-e040-e00a18064a99",
+                    "apiItemURL": "http://api.repo.nypl.org/api/v2/items/1001d080-c5ff-012f-55d9-58d385a7bc34",
+                    "apiItemDetailURL": "http://api.repo.nypl.org/api/v2/items/item_details/510d47da-5165-a3d9-e040-e00a18064a99",
+                    "title": "Hello, Frisco!",
+                    "typeOfResource": "notated music",
+                    "dateDigitized": "2016-02-03T22:01:55Z",
+                    "rightsStatement": "The New York Public Library believes that this item is in the public domain under the laws of the United States, but did not make a determination as to its copyright status under the copyright laws of other countries. This item may not be in the public domain under the laws of other countries. Though not required, if you want to credit us as the source, please use the following statement, \"From The New York Public Library,\" and provide a link back to the item on our Digital Collections site. Doing so helps us track how our collection is used and helps justify freely releasing even more content in the future.",
+                    "rightsStatementURI": "http://rightsstatements.org/vocab/NoC-US/1.0/"
+                }
+            ]
+        }
+    }
+}

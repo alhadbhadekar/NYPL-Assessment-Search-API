@@ -1,0 +1,13 @@
+{
+    "result": [
+        {
+            "Digitized Date": "2016-02-03T22:01:55Z",
+            "ImageId": "G99C387_002",
+            "ItemDetailURL": "http://api.repo.nypl.org/api/v2/items/item_details/510d47da-5165-a3d9-e040-e00a18064a99",
+            "ItemURL": "http://api.repo.nypl.org/api/v2/items/1001d080-c5ff-012f-55d9-58d385a7bc34",
+            "Link": "http://digitalcollections.nypl.org/items/510d47da-5165-a3d9-e040-e00a18064a99",
+            "Title": "Hello, Frisco!",
+            "TypeOfResource": "notated music"
+        }
+    ]
+}
